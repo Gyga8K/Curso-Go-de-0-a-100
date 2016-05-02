@@ -6,11 +6,11 @@ import (
 
 func main() {
 
-	//Contador de Números Primos
+	//Contador de Números Impares
 
 	encabezado := `
 	****************************
-	Contador de Numeros Primos
+	Contador de Numeros Impares
 	****************************
 	`
 	//Imprimimos el encabezado
@@ -26,17 +26,17 @@ func main() {
 	var numero2 int
 	//Leemos el numero digitado y lo guardamos en la variable numero2
 	fmt.Scanln(&numero2)
-	//Declaramos la variable contador para guardar la cantidad de numeros primos
+	//Declaramos la variable contador para guardar la cantidad de numeros impares
 	var contador int
 	//Realizamos un bucle tomando como inicio y fin los numeros digitados
 	for i := numero1; i <= numero2; i++ {
-		//Evaluamos sin el numero es primo
+		//Evaluamos sin el numero es impar
 		if i%2 != 0 {
-			//Si el numero es primo
+			//Si el numero es impar
 			//incrementamos el valor de la variable contador en 1
 			contador++
-			//Imprimimos el numero primo
-			fmt.Printf("%d es un numero primo \n", i)
+			//Imprimimos el numero impar
+			fmt.Printf("%d es un numero impar\n", i)
 		}
 	}
 
@@ -48,6 +48,6 @@ func main() {
 	//Imprimimos el encabezado
 	fmt.Println(encabezado)
 	//Imprimimos los resultados
-	fmt.Printf("Entre el %d y el %d hay %d numeros primos.", numero1, numero2, contador)
+	fmt.Printf("Entre el %d y el %d hay %d numeros impares.", numero1, numero2, contador)
 
 }
