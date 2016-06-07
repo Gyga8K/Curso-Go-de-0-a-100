@@ -1,0 +1,15 @@
+@startuml
+Main -> F1 :Llamada 1
+activate F1
+F1 -> F2 :Llamada 2
+activate F2
+F2 -> F3 :Llamada 3
+activate F3
+deactivate F3
+F2 <-- F3 : Respuesta 3
+deactivate F2
+F1 <-- F2 : Respuesta 2
+deactivate F1
+Main <-- F1 : Respuesta 1
+deactivate Main
+@enduml
