@@ -6,6 +6,7 @@ import (
 
 func main() {
 	//Range
+	//TODO Crear funciones faltantes
 
 	nombres := []string{
 		"Alejandro",
@@ -14,24 +15,24 @@ func main() {
 		"Carlos",
 	}
 
-	for index, nombre := range nombres {
+	for index, nombre1 := range nombres {
 		// Index = 0
 		// nombre nombres[index]
-		fmt.Printf("El nombre %q esta en el index %d \n", nombre, index)
+		fmt.Printf("El nombre %q esta en el index %d \n", nombre1, index)
 	}
 
-	for _, nombre := range nombres {
-		fmt.Println(nombre)
+	for _, nombre2 := range nombres {
+		fmt.Println(nombre2)
 	}
 
-	for index := range nombres {
-		fmt.Println(index)
+	for index1 := range nombres {
+		fmt.Println(index1)
 	}
 
 	cadena := "Hola gente, yo soy gyga y esto es GygaCode."
 
-	for index, letra := range cadena {
-		fmt.Printf("La letra %q esta en el index %d \n", letra, index)
+	for index2, letra := range cadena {
+		fmt.Printf("La letra %q esta en el index %d \n", letra, index2)
 	}
 
 }
